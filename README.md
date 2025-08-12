@@ -62,6 +62,17 @@
 
 ---
 
+
+## 🎵 Currently Vibing To
+
+<div align="center">
+
+[![Spotify](https://spotify-github-profile.kittinanx.com/api/view?uid=rygzoq53okykj3dvmzbjkdjhx&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view?uid=rygzoq53okykj3dvmzbjkdjhx&redirect=true)
+
+</div>
+
+---
+
 ## 📫 Let's Connect!  
 
 <div align="center">
