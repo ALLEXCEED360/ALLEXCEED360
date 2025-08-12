@@ -56,18 +56,42 @@
 ## 📊 GitHub Analytics  
 
 <div align="center">
-  <img height="180em" width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ALLEXCEED360&layout=compact&langs_count=7&theme=tokyonight"/>
-  <img height="180em" width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=ALLEXCEED360&theme=tokyonight"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ALLEXCEED360&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=ALLEXCEED360&theme=tokyonight&hide_border=true&fire=FF6B35&ring=FF6B35" alt="GitHub Streak"/>
+</div>
+
+<br/>
+
+<div align="center">
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ALLEXCEED360&theme=tokyonight" alt="Profile Summary"/>
+</div>
+
+<br/>
+
+<div align="center">
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ALLEXCEED360&theme=tokyonight" alt="Repos per Language"/>
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ALLEXCEED360&theme=tokyonight" alt="Most Commit Language"/>
 </div>
 
 ---
-
-
 ## 🎵 Currently Vibing To
 
 <div align="center">
 
 [![Spotify](https://spotify-github-profile.kittinanx.com/api/view?uid=rygzoq53okykj3dvmzbjkdjhx&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view?uid=rygzoq53okykj3dvmzbjkdjhx&redirect=true)
+
+</div>
+
+<br>
+
+<div align="center">
+
+**My Coding Playlists**
+
+[![ROYAL](https://img.shields.io/badge/👑%20ROYAL-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/4L9bNaV3QCf7Rz66BtKahE?si=0916653e75ea4afb)
+[![PLATINUM](https://img.shields.io/badge/💎%20PLATINUM-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/2Lyu2MFPkol0zqDqyxoIb1?si=d8cc769e4a6a45ff)
+
+*Music that powers great code* ✨
 
 </div>
 
