@@ -86,7 +86,7 @@
 
 <div align="center">
 
-**My Coding Playlists**
+**My Playlists**
 
 [![ROYAL](https://img.shields.io/badge/👑%20ROYAL-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/4L9bNaV3QCf7Rz66BtKahE?si=0916653e75ea4afb)
 [![PLATINUM](https://img.shields.io/badge/💎%20PLATINUM-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/2Lyu2MFPkol0zqDqyxoIb1?si=d8cc769e4a6a45ff)
