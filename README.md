@@ -53,6 +53,22 @@
 
 ---
 
+## 🎮 Currently Gaming
+
+<div align="center">
+
+[![Discord Presence](https://lanyard.cnrad.dev/api/allexceed360)](https://discord.com/users/allexceed360)
+
+</div>
+
+<div align="center">
+
+*Live status from Discord* 🎯
+
+</div>
+
+---
+
 ## 📊 GitHub Analytics  
 
 <div align="center">
