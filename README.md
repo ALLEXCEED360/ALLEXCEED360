@@ -57,7 +57,7 @@
 
 <div align="center">
 
-[![Discord Presence](https://lanyard.cnrad.dev/api/allexceed360)](https://discord.com/users/allexceed360)
+[![Discord Presence](https://lanyard.cnrad.dev/api/690807666276040764)](https://discord.com/users/690807666276040764)
 
 </div>
 
