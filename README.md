@@ -53,22 +53,6 @@
 
 ---
 
-## 🎮 Currently Gaming
-
-<div align="center">
-
-[![Discord Presence](https://lanyard.cnrad.dev/api/690807666276040764)](https://discord.com/users/690807666276040764)
-
-</div>
-
-<div align="center">
-
-*Live status from Discord* 🎯
-
-</div>
-
----
-
 ## 📊 GitHub Analytics  
 
 <div align="center">
@@ -90,24 +74,28 @@
 </div>
 
 ---
-## 🎵 Currently Vibing To
+
+## 🎵🎮 Live Activity
 
 <div align="center">
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+[![Discord Presence](https://lanyard.cnrad.dev/api/690807666276040764?theme=dark&bg=0d1117&animated=true&hideDiscrim=true&borderRadius=30px)](https://discord.com/users/690807666276040764)
+![Discord](https://img.shields.io/badge/Live-7289DA?style=flat&logo=discord&logoColor=white)
+
+</td>
+<td align="center" width="50%">
 
 [![Spotify](https://spotify-github-profile.kittinanx.com/api/view?uid=rygzoq53okykj3dvmzbjkdjhx&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view?uid=rygzoq53okykj3dvmzbjkdjhx&redirect=true)
 
-</div>
+[![👑 ROYAL](https://img.shields.io/badge/👑%20ROYAL-1DB954?style=flat&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/4L9bNaV3QCf7Rz66BtKahE?si=0916653e75ea4afb) [![💎 PLATINUM](https://img.shields.io/badge/💎%20PLATINUM-1DB954?style=flat&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/2Lyu2MFPkol0zqDqyxoIb1?si=d8cc769e4a6a45ff)
 
-<br>
-
-<div align="center">
-
-**My Playlists**
-
-[![ROYAL](https://img.shields.io/badge/👑%20ROYAL-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/4L9bNaV3QCf7Rz66BtKahE?si=0916653e75ea4afb)
-[![PLATINUM](https://img.shields.io/badge/💎%20PLATINUM-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/2Lyu2MFPkol0zqDqyxoIb1?si=d8cc769e4a6a45ff)
-
-*Music that powers great code* ✨
+</td>
+</tr>
+</table>
 
 </div>
 
