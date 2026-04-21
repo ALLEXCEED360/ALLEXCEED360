@@ -15,7 +15,7 @@
 
 ## 🌟 About Me
 
-I'm a **multidisciplinary technologist** working at the intersection of **software engineering, AI, game development, and visual storytelling** — a recent CSE graduate from **BRAC University** (CGPA 3.78).
+I'm a **multidisciplinary technologist** working at the intersection of **software engineering, AI, game development, and visual storytelling** — a recent CSE graduate from **BRAC University**.
 
 I build systems *and* tell stories around them. One week I'm architecting a MERN backend, the next I'm prototyping a computer vision app or shipping a multiplayer game on Steam. My work spans code, cinematography, and everything in between.
 
