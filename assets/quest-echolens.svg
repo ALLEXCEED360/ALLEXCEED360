@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 262" width="1200" height="262" role="img" aria-label="Quest V. EchoLens, multimodal video intelligence, in development. Makes hours of video searchable with answers welded to the exact timestamp the model cannot fabricate. 7.9 times realtime transcription on a single GPU with hybrid semantic search. Python, FastAPI, pgvector, faster-whisper, PyTorch.">
-  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
+  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="-300" y1="0" x2="-40" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".92"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/><animateTransform attributeName="gradientTransform" type="translate" values="0 0;1760 0;1760 0" keyTimes="0;.42;1" dur="6.4s" begin="1.1s" repeatCount="indefinite"/></linearGradient><linearGradient id="scanf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e4002b" stop-opacity="0"/><stop offset=".5" stop-color="#ff2b50" stop-opacity=".85"/><stop offset="1" stop-color="#e4002b" stop-opacity="0"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
   <style>
     .disp{font-family:Impact,Haettenschweiler,"Franklin Gothic Heavy","Arial Narrow Bold","Arial Black",sans-serif;font-weight:400}
     .hv{font-family:"Arial Black","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900}
@@ -12,18 +12,45 @@
     .d5{animation-delay:.4s}.d6{animation-delay:.5s}.d7{animation-delay:.6s}.d8{animation-delay:.7s}
     .draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.3s cubic-bezier(.65,0,.35,1) .25s forwards}
     .flick{animation:flick 5s steps(1,end) infinite}
+    .ember{animation-name:ember;animation-timing-function:ease-out;animation-iteration-count:infinite}
+    .scan{animation:scan 11.9s linear infinite}
+    .drift{animation:drift 26s ease-in-out infinite}
+    .pulse{animation:pulse 3.6s ease-in-out infinite}
+    .amb{pointer-events:none}
     @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
     @keyframes slam{from{opacity:0;transform:translate(-34px,0) scale(1.06)}to{opacity:1;transform:none}}
     @keyframes cut{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:none}}
     @keyframes draw{to{stroke-dashoffset:0}}
     @keyframes flick{0%,92%,96%{opacity:1}94%,98%{opacity:.45}}
+    @keyframes ember{0%{opacity:0;transform:translateY(0)}14%{opacity:.75}66%{opacity:.38}100%{opacity:0;transform:translateY(-310px)}}
+    @keyframes scan{0%{transform:translateY(-24px);opacity:0}7%{opacity:.5}93%{opacity:.5}100%{transform:translateY(288px);opacity:0}}
+    @keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(22px)}}
+    @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
     @media (prefers-reduced-motion:reduce){
-      .rise,.slam,.cut,.flick{animation:none}
+      .rise,.slam,.cut,.flick,.ember,.scan,.drift,.pulse{animation:none}
       .draw{animation:none;stroke-dashoffset:0}
+      .sheen,.amb{display:none}
     }
   </style>
   <rect width="1200" height="262" fill="url(#gd)"/>
   <rect width="1200" height="262" fill="url(#ht)" opacity=".5"/>
+  <g class="amb">
+    <circle class="ember" cx="793" cy="278" r="1.2" fill="#ff2b50" style="animation-duration:8.4s;animation-delay:-5.1s"/>
+    <circle class="ember" cx="760" cy="287" r="2.1" fill="#e4002b" style="animation-duration:8.0s;animation-delay:-3.9s"/>
+    <circle class="ember" cx="955" cy="272" r="1.9" fill="#e4002b" style="animation-duration:13.8s;animation-delay:-1.5s"/>
+    <circle class="ember" cx="1065" cy="279" r="2.2" fill="#ff2b50" style="animation-duration:9.2s;animation-delay:-9.5s"/>
+    <circle class="ember" cx="1147" cy="283" r="1.8" fill="#e4002b" style="animation-duration:10.9s;animation-delay:-5.5s"/>
+    <circle class="ember" cx="855" cy="278" r="1.6" fill="#e4002b" style="animation-duration:8.6s;animation-delay:-0.8s"/>
+    <circle class="ember" cx="186" cy="273" r="1.1" fill="#ff2b50" style="animation-duration:13.2s;animation-delay:-0.9s"/>
+    <circle class="ember" cx="274" cy="284" r="2.5" fill="#e4002b" style="animation-duration:12.8s;animation-delay:-10.3s"/>
+    <circle class="ember" cx="427" cy="278" r="2.5" fill="#e4002b" style="animation-duration:11.7s;animation-delay:-5.8s"/>
+    <circle class="ember" cx="387" cy="279" r="2.4" fill="#ff2b50" style="animation-duration:12.3s;animation-delay:-2.5s"/>
+    <circle class="ember" cx="857" cy="277" r="1.5" fill="#e4002b" style="animation-duration:13.7s;animation-delay:-9.8s"/>
+    <circle class="ember" cx="685" cy="271" r="2.2" fill="#e4002b" style="animation-duration:9.4s;animation-delay:-5.0s"/>
+    <circle class="ember" cx="538" cy="281" r="2.4" fill="#ff2b50" style="animation-duration:12.3s;animation-delay:-1.7s"/>
+    <circle class="ember" cx="963" cy="280" r="1.5" fill="#e4002b" style="animation-duration:8.1s;animation-delay:-3.7s"/>
+    <rect class="scan" x="0" y="0" width="1200" height="2" fill="url(#scanf)"/>
+  </g>
   <polygon points="24,0 1200,0 1200,238 1176,262 0,262 0,24" fill="#0e0e0e" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
   <polygon points="2,30 14,22 14,240 2,250" fill="#e4002b"/>
   <g transform="translate(0,232) skewX(-9) translate(0,-232)"><text class="disp" font-size="182" textLength="66" lengthAdjust="spacingAndGlyphs" text-anchor="end" fill-opacity=".05" x="1164" y="232" fill="#ffffff">V</text></g>
@@ -32,7 +59,7 @@
     <text class="hv" x="52" y="48" font-size="11.5" letter-spacing="3.6" fill="#ffffff">QUEST V</text>
     <g><polygon points="1038.44,28 1158,28 1149,53 1029.44,53" fill="#171717"/><text class="hv" x="1093.72" y="45" font-size="10.5" letter-spacing="1.8" text-anchor="middle" fill="#ece9e4">IN DEVELOPMENT</text></g>
   </g>
-  <g class="slam d2"><g transform="translate(0,112) skewX(-9) translate(0,-112)"><text class="disp" font-size="46" textLength="186" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="43" y="115" fill="#e4002b">ECHOLENS</text><text class="disp" font-size="46" textLength="186" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="40" y="112" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">ECHOLENS</text></g></g>
+  <g class="slam d2"><g transform="translate(0,112) skewX(-9) translate(0,-112)"><text class="disp" font-size="46" textLength="186" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="43" y="115" fill="#e4002b">ECHOLENS</text><text class="disp" font-size="46" textLength="186" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="40" y="112" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">ECHOLENS</text><text class="disp sheen" font-size="46" textLength="186" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="40" y="112" fill="url(#sheen)">ECHOLENS</text></g></g>
   <text class="sn rise d3" x="252" y="112" font-size="15" font-style="italic" fill="#ece9e4" fill-opacity=".55">MULTIMODAL VIDEO INTELLIGENCE</text>
   <line class="draw" x1="40" y1="132" x2="1158" y2="132" stroke="#ffffff" stroke-opacity=".2" stroke-width="1.5"/>
   <text class="sn rise d4" x="40" y="160" font-size="16" fill="#ece9e4" fill-opacity=".9">Makes hours of video searchable. Ask a question and get an answer welded to the exact</text>

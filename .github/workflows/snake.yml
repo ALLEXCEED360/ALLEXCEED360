@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Refresh profile activity
 
 on:
   schedule:
@@ -8,7 +8,8 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  snake:
+    name: Contribution snake
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -28,3 +29,33 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  chronicle:
+    name: Commit log panel
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render the commit log panel from live data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: python -I tools/chronicle.py assets/chronicle-panel.svg
+
+      - name: Commit it only when the numbers moved
+        run: |
+          if [ -n "$(git status --porcelain assets/chronicle-panel.svg)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/chronicle-panel.svg
+            git commit -m "Refresh commit log panel"
+            git push
+          else
+            echo "No change in the commit log panel."
+          fi

@@ -41,14 +41,24 @@ CSS = """
     .d5{animation-delay:.4s}.d6{animation-delay:.5s}.d7{animation-delay:.6s}.d8{animation-delay:.7s}
     .draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.3s cubic-bezier(.65,0,.35,1) .25s forwards}
     .flick{animation:flick 5s steps(1,end) infinite}
+    .ember{animation-name:ember;animation-timing-function:ease-out;animation-iteration-count:infinite}
+    .scan{animation:scan __SCANDUR__s linear infinite}
+    .drift{animation:drift 26s ease-in-out infinite}
+    .pulse{animation:pulse 3.6s ease-in-out infinite}
+    .amb{pointer-events:none}
     @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
     @keyframes slam{from{opacity:0;transform:translate(-34px,0) scale(1.06)}to{opacity:1;transform:none}}
     @keyframes cut{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:none}}
     @keyframes draw{to{stroke-dashoffset:0}}
     @keyframes flick{0%%,92%%,96%%{opacity:1}94%%,98%%{opacity:.45}}
+    @keyframes ember{0%%{opacity:0;transform:translateY(0)}14%%{opacity:.75}66%%{opacity:.38}100%%{opacity:0;transform:translateY(__RISE__px)}}
+    @keyframes scan{0%%{transform:translateY(-24px);opacity:0}7%%{opacity:.5}93%%{opacity:.5}100%%{transform:translateY(__SCANH__px);opacity:0}}
+    @keyframes drift{0%%,100%%{transform:translateX(0)}50%%{transform:translateX(22px)}}
+    @keyframes pulse{0%%,100%%{opacity:.5}50%%{opacity:1}}
     @media (prefers-reduced-motion:reduce){
-      .rise,.slam,.cut,.flick{animation:none}
+      .rise,.slam,.cut,.flick,.ember,.scan,.drift,.pulse{animation:none}
       .draw{animation:none;stroke-dashoffset:0}
+      .sheen,.amb{display:none}
     }
 """ % (DISP, HEAVY, SANS, MONO)
 
@@ -58,12 +68,18 @@ def e(t):
 
 
 def doc(w, h, label, defs, body):
+    css = (CSS.replace("__RISE__", "%d" % -(h + 48))
+              .replace("__SCANH__", "%d" % (h + 26))
+              .replace("__SCANDUR__", "%.1f" % max(5.5, h / 22.0)))
     return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" width="%d" height="%d" '
             'role="img" aria-label="%s">\n  <defs>%s</defs>\n  <style>%s  </style>\n%s</svg>\n'
-            % (w, h, w, h, e(label), defs, CSS, body))
+            % (w, h, w, h, e(label), defs, css, body))
 
 
 def write(name, content):
+    # chronicle.py imports this module purely for its design helpers.
+    if os.environ.get("PERSONA_NO_EMIT"):
+        return
     with open(os.path.join(OUT, name), "w", encoding="utf-8") as f:
         f.write(content)
     print("%-26s %6d bytes" % (name, len(content.encode("utf-8"))))
@@ -115,7 +131,7 @@ def burst(cx, cy, r_out, r_in, spikes=12, rot=0.0):
 
 
 def p5text(x, y, text, fs, fill=WHITE, tl=None, anchor="start", skew=-9,
-           shadow=RED, outline=BLACK, ow=7, cls="disp", ls=None, op=None):
+           shadow=RED, outline=BLACK, ow=7, cls="disp", ls=None, op=None, sheen=None):
     """Oblique heavy display text with a red offset copy and a black outline."""
     tlen = tl if tl is not None else len(text) * fs * 0.46
     extra = ''
@@ -125,6 +141,8 @@ def p5text(x, y, text, fs, fill=WHITE, tl=None, anchor="start", skew=-9,
         extra += ' fill-opacity="%s"' % op
     common = ('class="%s" font-size="%g" textLength="%g" lengthAdjust="spacingAndGlyphs" '
               'text-anchor="%s"%s' % (cls, fs, tlen, anchor, extra))
+    if sheen is None:
+        sheen = fs >= 36 and outline is not None
     off = min(8.0, max(2.0, round(fs * 0.075)))
     g = '<g transform="translate(0,%g) skewX(%g) translate(0,%g)">' % (y, skew, -y)
     if shadow:
@@ -135,6 +153,9 @@ def p5text(x, y, text, fs, fill=WHITE, tl=None, anchor="start", skew=-9,
               % (common, x, y, fill, outline, ow, e(text)))
     else:
         g += '<text %s x="%g" y="%g" fill="%s">%s</text>' % (common, x, y, fill, e(text))
+    if sheen:
+        sh = common.replace('class="%s"' % cls, 'class="%s sheen"' % cls, 1)
+        g += '<text %s x="%g" y="%g" fill="url(#sheen)">%s</text>' % (sh, x, y, e(text))
     return g + '</g>', tlen
 
 
@@ -146,13 +167,42 @@ GROUND = ('<linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1">'
           '<stop offset="0" stop-color="%s"/><stop offset="1" stop-color="%s"/></linearGradient>'
           '<linearGradient id="rd" x1="0" y1="0" x2="1" y2="0">'
           '<stop offset="0" stop-color="%s"/><stop offset="1" stop-color="%s"/></linearGradient>'
-          % (BLACK2, BLACK, RED_DEEP, RED))
+          % (BLACK2, BLACK, RED_DEEP, RED)
+          + '<linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="-300" y1="0" x2="-40" y2="0">'
+            '<stop offset="0" stop-color="#ffffff" stop-opacity="0"/>'
+            '<stop offset=".5" stop-color="#ffffff" stop-opacity=".92"/>'
+            '<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>'
+            '<animateTransform attributeName="gradientTransform" type="translate" '
+            'values="0 0;1760 0;1760 0" keyTimes="0;.42;1" dur="6.4s" begin="1.1s" '
+            'repeatCount="indefinite"/></linearGradient>'
+          + '<linearGradient id="scanf" x1="0" y1="0" x2="1" y2="0">'
+            '<stop offset="0" stop-color="%s" stop-opacity="0"/>'
+            '<stop offset=".5" stop-color="%s" stop-opacity=".85"/>'
+            '<stop offset="1" stop-color="%s" stop-opacity="0"/></linearGradient>'
+            % (RED, RED_HOT, RED))
 
 
-def ground(w, h, ht=True):
+def ambient(w, h, seed=9):
+    """Embers drifting up and a scanline crossing the plate, both on infinite loops."""
+    r = Rnd(seed + w * 7 + h)
+    n = min(18, max(6, int(w * h / 22000)))
+    s = '  <g class="amb">\n'
+    for i in range(n):
+        s += ('    <circle class="ember" cx="%.0f" cy="%.0f" r="%.1f" fill="%s" '
+              'style="animation-duration:%.1fs;animation-delay:-%.1fs"/>\n'
+              % (r.span(24, w - 24), h + r.span(2, 26), r.span(1.1, 2.6),
+                 RED_HOT if i % 3 == 0 else RED, r.span(7.0, 14.0), r.span(0.0, 12.0)))
+    s += '    <rect class="scan" x="0" y="0" width="%d" height="2" fill="url(#scanf)"/>\n' % w
+    s += '  </g>\n'
+    return s
+
+
+def ground(w, h, ht=True, amb=True):
     s = '  <rect width="%d" height="%d" fill="url(#gd)"/>\n' % (w, h)
     if ht:
         s += '  <rect width="%d" height="%d" fill="url(#ht)" opacity=".5"/>\n' % (w, h)
+    if amb:
+        s += ambient(w, h)
     return s
 
 
@@ -187,11 +237,11 @@ def tag(xr, y, text, bg=RED, fg=WHITE):
 
 # ── hero ───────────────────────────────────────────────────────────────────
 def make_hero():
-    W, H = 1200, 486
+    W, H = 1200, 508
     defs = GROUND + HALFTONE
     b = ground(W, H)
     # diagonal slashes
-    b += '  <g class="cut d1" opacity=".9">\n'
+    b += '  <g class="cut d1 drift" opacity=".9">\n'
     b += '    <polygon points="812,-10 938,-10 668,496 542,496" fill="%s" fill-opacity=".16"/>\n' % RED
     b += '    <polygon points="958,-10 1002,-10 732,496 688,496" fill="%s" fill-opacity=".30"/>\n' % RED
     b += '  </g>\n'
@@ -210,7 +260,7 @@ def make_hero():
     b += ('    <polygon points="56,30 70,30 66,46 52,46" fill="%s"/>\n' % RED)
     b += ('    <text class="hv" x="82" y="44" font-size="13" letter-spacing="6" fill="%s">ALLEXCEED360</text>\n' % WHITE)
     b += ('    <text class="mn" x="1144" y="44" font-size="12" letter-spacing="4" text-anchor="end" '
-          'fill="%s">EST. DHAKA</text>\n' % GREY)
+          'fill="%s">HOUSTON, TX</text>\n' % GREY)
     b += '  </g>\n'
     b += '  <line class="draw" x1="56" y1="62" x2="1144" y2="62" stroke="%s" stroke-opacity=".45" stroke-width="2"/>\n' % WHITE
     # name, stacked and staggered
@@ -225,21 +275,29 @@ def make_hero():
           'lengthAdjust="spacing" fill="%s">SOFTWARE ENGINEER / GAME DEVELOPER / VISUAL STORYTELLER</text>\n' % BLACK)
     b += '  </g>\n'
     b += ('  <text class="sn rise d6" x="56" y="420" font-size="19" font-style="italic" fill="%s">'
-          'I build systems, and tell the stories around them.</text>\n' % BONE)
-    # bottom strip
+          'Building systems. Telling stories. Creating worlds.</text>\n' % BONE)
+    # metadata row
+    meta = [("EDUCATION", "BRACU / CSE"),
+            ("NEXT CHAPTER", "GT / OMSCS"),
+            ("GAME DEV", "UNITY / UE5"),
+            ("ENGINEERING", "PYTHON / C++")]
     b += '  <g class="rise d7">\n'
-    b += '    <line x1="56" y1="444" x2="1144" y2="444" stroke="%s" stroke-opacity=".2" stroke-width="1.5"/>\n' % WHITE
-    b += '    <g class="mn" font-size="12.5" letter-spacing="3" fill="%s">\n' % GREY
-    b += '      <text x="56" y="470">BRAC UNIVERSITY / CSE</text>\n'
-    b += '      <text x="416" y="470">UNITY &#183; UNREAL 5 &#183; PYTORCH</text>\n'
-    b += '      <text x="836" y="470">SHIPPED ON STEAM</text>\n'
-    b += '    </g>\n'
-    b += '    <polygon points="388,458 400,458 396,472 384,472" fill="%s"/>\n' % RED
-    b += '    <polygon points="808,458 820,458 816,472 804,472" fill="%s"/>\n' % RED
+    b += '    <line x1="56" y1="440" x2="1144" y2="440" stroke="%s" stroke-opacity=".2" stroke-width="1.5"/>\n' % WHITE
+    for i, (lab, val) in enumerate(meta):
+        x = 56 + i * 272
+        if i:
+            b += ('    <polygon points="%d,456 %d,456 %d,490 %d,490" fill="%s" fill-opacity=".55"/>\n'
+                  % (x - 26, x - 20, x - 26, x - 32, RED))
+        b += ('    <text class="mn" x="%d" y="466" font-size="10.5" letter-spacing="2.8" fill="%s">%s</text>\n'
+              % (x, GREY, e(lab)))
+        b += ('    <text class="hv" x="%d" y="489" font-size="14" letter-spacing="1.4" fill="%s">%s</text>\n'
+              % (x, WHITE, e(val)))
     b += '  </g>\n'
     return doc(W, H, "Aryan Alam. Software engineer, game developer and visual storyteller. "
-                     "I build systems and tell the stories around them. BRAC University CSE; Unity, "
-                     "Unreal 5 and PyTorch; shipped on Steam.", defs, b)
+                     "Building systems, telling stories, creating worlds. Houston, Texas. "
+                     "Education BRAC University CSE; next chapter Georgia Tech OMSCS; "
+                     "game development in Unity and Unreal Engine 5; engineering in Python and C++.",
+               defs, b)
 
 
 write("hero.svg", make_hero())
@@ -378,7 +436,7 @@ QUESTS = [
             "play with a custom stage editor, cross-platform on PC and mobile and full Steam "
             "integration, and the game Aryan now develops and optimizes at Dragon Drop LLC. "
             "Unity, C sharp, Photon Fusion, Steamworks."),
- dict(file="quest-ffvii.svg", idx="II", name="FFVII TIMELINE", tl=322,
+ dict(file="quest-ffvii.svg", idx="II", name="FFVII: TIMELINE ANALYZER", tl=540,
       sub="INTERACTIVE NARRATIVE ANALYSIS", status=("LIVE", RED_DEEP),
       desc=["An interactive analysis of the Final Fantasy VII universe across its major versions. Every",
             "retelling, remake and divergence laid against the others on one timeline."],
@@ -654,3 +712,84 @@ def make_footer():
 
 
 write("footer-signature.svg", make_footer())
+
+
+# ── contact ────────────────────────────────────────────────────────────────
+def make_contact():
+    W, H = 1200, 208
+    defs = GROUND + HALFTONE
+    b = ground(W, H)
+    b += '  <polygon class="cut d1 drift" points="236,-10 292,-10 196,218 140,218" fill="%s" fill-opacity=".14"/>\n' % RED
+    b += '  <polygon class="cut d1 drift" points="946,-10 986,-10 890,218 850,218" fill="%s" fill-opacity=".14"/>\n' % RED
+    t, _ = p5text(600, 92, "TALK TO ME.", 48, tl=310, anchor="middle", ow=5)
+    b += '  <g class="slam d2">%s</g>\n' % t
+    b += ('  <text class="sn rise d4" x="600" y="138" font-size="16" text-anchor="middle" fill="%s" '
+          'fill-opacity=".88">Retrieval pipelines, computer vision, Unreal Engine, or why filmmaking '
+          'makes you a better engineer.</text>\n' % BONE)
+    b += ('  <text class="sn rise d5" x="600" y="166" font-size="16" text-anchor="middle" fill="%s" '
+          'fill-opacity=".88">If you&#8217;re building something strange and ambitious, the inbox is '
+          'open.</text>\n' % BONE)
+    b += '  <g class="rise d6">%s%s</g>\n' % (
+        '<polygon points="402,186 414,186 410,198 398,198" fill="%s"/>' % RED,
+        '<polygon points="786,186 798,186 794,198 782,198" fill="%s"/>' % RED)
+    b += '  <line class="draw" x1="430" y1="192" x2="770" y2="192" stroke="%s" stroke-opacity=".3"/>\n' % WHITE
+    return doc(W, H, "Talk to me. Retrieval pipelines, computer vision, Unreal Engine, or why "
+                     "filmmaking makes you a better engineer. If you are building something strange "
+                     "and ambitious, the inbox is open.", defs, b)
+
+
+write("contact-panel.svg", make_contact())
+
+
+def make_label(name, W, kicker, title, label):
+    """A header sized to sit exactly above its widget, never stretched."""
+    H = 54
+    defs = GROUND + HALFTONE
+    b = ground(W, H, amb=False)
+    b += '  <polygon class="cut d1" points="-6,-6 40,-6 22,60 -6,60" fill="%s"/>\n' % RED
+    b += '  <g class="rise d2">\n'
+    b += '    <polygon points="%s" fill="%s"/>\n' % (
+        torn(44, 13, 78, 26, seed=len(kicker) + 4, amp=3, step=18), RED)
+    b += ('    <text class="hv" x="83" y="31" font-size="10.5" letter-spacing="2.2" '
+          'text-anchor="middle" fill="%s">%s</text>\n' % (WHITE, e(kicker)))
+    b += '  </g>\n'
+    tl = len(title) * 10.6
+    tx, _ = p5text(138, 37, title, 23, tl=tl, ow=4, skew=-7)
+    b += '  <g class="slam d3">%s</g>\n' % tx
+    b += ('  <line class="draw" x1="%g" y1="45" x2="%d" y2="45" stroke="%s" '
+          'stroke-opacity=".22"/>\n' % (138, W - 16, WHITE))
+    write(name, doc(W, H, label, defs, b))
+
+
+make_label("label-discord.svg", 410, "LIVE", "DISCORD",
+           "Discord: live presence.")
+make_label("label-spotify.svg", 320, "NOW", "SPOTIFY",
+           "Spotify: what is playing now.")
+
+
+# ── contact buttons ────────────────────────────────────────────────────────
+def make_button(name, W, kicker, value, label):
+    """A slanted plate: red kicker block, then the handle. Wrapped in a link."""
+    H = 54
+    defs = GROUND + HALFTONE
+    kw = len(kicker) * 7.4 + 34
+    b = ground(W, H, amb=False)
+    b += ('  <polygon points="12,2 %d,2 %d,%d 0,%d" fill="%s" stroke="%s" '
+          'stroke-opacity=".3" stroke-width="1.5"/>\n'
+          % (W - 2, W - 14, H - 2, H - 2, BLACK2, WHITE))
+    b += '  <polygon class="cut d1" points="12,2 %g,2 %g,%d 0,%d" fill="%s"/>\n' % (
+        kw + 12, kw, H - 2, H - 2, RED)
+    b += ('  <text class="hv rise d2" x="%g" y="33" font-size="11" letter-spacing="2.2" '
+          'text-anchor="middle" fill="%s">%s</text>\n' % (kw / 2 + 6, WHITE, e(kicker)))
+    tl = min(len(value) * 10.2, W - kw - 42)
+    tx, _ = p5text(kw + 22, 36, value, 21, tl=tl, ow=4, skew=-7)
+    b += '  <g class="slam d3">%s</g>\n' % tx
+    write(name, doc(W, H, label, defs, b))
+
+
+make_button("btn-email.svg", 356, "EMAIL", "aryan138alam@gmail.com",
+            "Email aryan138alam at gmail dot com.")
+make_button("btn-linkedin.svg", 300, "LINKEDIN", "fardeen-alam",
+            "LinkedIn profile, fardeen-alam.")
+make_button("btn-artstation.svg", 322, "ARTSTATION", "allexceed360",
+            "ArtStation portfolio, allexceed360.")

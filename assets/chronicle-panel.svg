@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 322" width="1200" height="322" role="img" aria-label="Commit log, re-rendered daily. 236 contributions between 19 OCT 2025 and 18 OCT 2026, across 66 active days of 365. Longest streak 26 consecutive days. Busiest day 17 contributions on 24 SEP 2026. Languages by volume: TypeScript 68.1 percent, Python 15.6 percent, CSS 7.5 percent, Dart 4.1 percent, JavaScript 3.6 percent, C++ 0.6 percent, Other 0.3 percent.">
+  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="-300" y1="0" x2="-40" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".92"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/><animateTransform attributeName="gradientTransform" type="translate" values="0 0;1760 0;1760 0" keyTimes="0;.42;1" dur="6.4s" begin="1.1s" repeatCount="indefinite"/></linearGradient><linearGradient id="scanf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e4002b" stop-opacity="0"/><stop offset=".5" stop-color="#ff2b50" stop-opacity=".85"/><stop offset="1" stop-color="#e4002b" stop-opacity="0"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
+  <style>
+    .disp{font-family:Impact,Haettenschweiler,"Franklin Gothic Heavy","Arial Narrow Bold","Arial Black",sans-serif;font-weight:400}
+    .hv{font-family:"Arial Black","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900}
+    .sn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+    .mn{font-family:ui-monospace,"IBM Plex Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .rise{animation:rise .85s cubic-bezier(.16,1,.3,1) both}
+    .slam{animation:slam .55s cubic-bezier(.2,1.3,.3,1) both}
+    .cut{animation:cut .6s cubic-bezier(.2,.9,.1,1) both}
+    .d1{animation-delay:.04s}.d2{animation-delay:.12s}.d3{animation-delay:.2s}.d4{animation-delay:.3s}
+    .d5{animation-delay:.4s}.d6{animation-delay:.5s}.d7{animation-delay:.6s}.d8{animation-delay:.7s}
+    .draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.3s cubic-bezier(.65,0,.35,1) .25s forwards}
+    .flick{animation:flick 5s steps(1,end) infinite}
+    .ember{animation-name:ember;animation-timing-function:ease-out;animation-iteration-count:infinite}
+    .scan{animation:scan 14.6s linear infinite}
+    .drift{animation:drift 26s ease-in-out infinite}
+    .pulse{animation:pulse 3.6s ease-in-out infinite}
+    .amb{pointer-events:none}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    @keyframes slam{from{opacity:0;transform:translate(-34px,0) scale(1.06)}to{opacity:1;transform:none}}
+    @keyframes cut{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:none}}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    @keyframes flick{0%,92%,96%{opacity:1}94%,98%{opacity:.45}}
+    @keyframes ember{0%{opacity:0;transform:translateY(0)}14%{opacity:.75}66%{opacity:.38}100%{opacity:0;transform:translateY(-370px)}}
+    @keyframes scan{0%{transform:translateY(-24px);opacity:0}7%{opacity:.5}93%{opacity:.5}100%{transform:translateY(348px);opacity:0}}
+    @keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(22px)}}
+    @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){
+      .rise,.slam,.cut,.flick,.ember,.scan,.drift,.pulse{animation:none}
+      .draw{animation:none;stroke-dashoffset:0}
+      .sheen,.amb{display:none}
+    }
+  </style>
+  <rect width="1200" height="322" fill="url(#gd)"/>
+  <rect width="1200" height="322" fill="url(#ht)" opacity=".5"/>
+  <g class="amb">
+    <circle class="ember" cx="1064" cy="343" r="2.0" fill="#ff2b50" style="animation-duration:11.6s;animation-delay:-8.8s"/>
+    <circle class="ember" cx="477" cy="333" r="1.3" fill="#e4002b" style="animation-duration:8.6s;animation-delay:-10.9s"/>
+    <circle class="ember" cx="775" cy="339" r="2.2" fill="#e4002b" style="animation-duration:9.6s;animation-delay:-10.5s"/>
+    <circle class="ember" cx="688" cy="333" r="2.5" fill="#ff2b50" style="animation-duration:12.5s;animation-delay:-7.6s"/>
+    <circle class="ember" cx="129" cy="326" r="1.6" fill="#e4002b" style="animation-duration:11.2s;animation-delay:-9.0s"/>
+    <circle class="ember" cx="231" cy="327" r="1.6" fill="#e4002b" style="animation-duration:13.9s;animation-delay:-0.2s"/>
+    <circle class="ember" cx="463" cy="346" r="2.1" fill="#ff2b50" style="animation-duration:11.6s;animation-delay:-7.2s"/>
+    <circle class="ember" cx="782" cy="331" r="2.6" fill="#e4002b" style="animation-duration:11.8s;animation-delay:-9.9s"/>
+    <circle class="ember" cx="1020" cy="326" r="1.8" fill="#e4002b" style="animation-duration:7.2s;animation-delay:-8.3s"/>
+    <circle class="ember" cx="61" cy="340" r="2.2" fill="#ff2b50" style="animation-duration:8.6s;animation-delay:-4.6s"/>
+    <circle class="ember" cx="711" cy="341" r="2.0" fill="#e4002b" style="animation-duration:11.0s;animation-delay:-8.3s"/>
+    <circle class="ember" cx="721" cy="325" r="2.1" fill="#e4002b" style="animation-duration:13.3s;animation-delay:-8.5s"/>
+    <circle class="ember" cx="44" cy="346" r="1.4" fill="#ff2b50" style="animation-duration:7.3s;animation-delay:-3.8s"/>
+    <circle class="ember" cx="292" cy="331" r="2.4" fill="#e4002b" style="animation-duration:9.2s;animation-delay:-2.2s"/>
+    <circle class="ember" cx="1018" cy="340" r="2.5" fill="#e4002b" style="animation-duration:10.0s;animation-delay:-8.8s"/>
+    <circle class="ember" cx="751" cy="342" r="2.1" fill="#ff2b50" style="animation-duration:10.4s;animation-delay:-11.0s"/>
+    <circle class="ember" cx="755" cy="334" r="1.2" fill="#e4002b" style="animation-duration:12.0s;animation-delay:-10.6s"/>
+    <rect class="scan" x="0" y="0" width="1200" height="2" fill="url(#scanf)"/>
+  </g>
+  <polygon points="24,0 1200,0 1200,298 1176,322 0,322 0,24" fill="#0e0e0e" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+  <polygon points="2,30 14,22 14,300 2,310" fill="#e4002b"/>
+  <g class="rise d1">
+    <polygon points="38.0,31.4 57.4,34.8 71.3,28.3 89.0,33.7 119.6,32.3 143.4,29.3 166.0,29.7 180.2,31.9 195.2,34.4 215.5,33.4 224.0,35.8 224.0,63.5 202.1,64.0 171.7,61.3 145.9,58.1 130.3,65.4 101.0,64.2 77.2,65.3 48.4,65.0 38.0,61.3" fill="#e4002b"/>
+    <text class="hv" x="52" y="53" font-size="12" letter-spacing="4.2" fill="#ffffff">COMMIT LOG</text>
+    <text class="mn" x="1158" y="52" font-size="10.5" letter-spacing="3" text-anchor="end" fill="#7d7d7d">REAL ACTIVITY &#183; RE-RENDERED DAILY</text>
+  </g>
+  <g class="slam d2">
+    <g transform="translate(0,146) skewX(-9) translate(0,-146)"><text class="disp" font-size="52" textLength="81" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="50" y="150" fill="#e4002b">236</text><text class="disp" font-size="52" textLength="81" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="46" y="146" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">236</text><text class="disp sheen" font-size="52" textLength="81" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="46" y="146" fill="url(#sheen)">236</text></g>
+  </g>
+  <g class="rise d3">
+    <text class="hv" x="46" y="172" font-size="11" letter-spacing="2.4" fill="#ff2b50">CONTRIBUTIONS</text>
+    <text class="mn" x="46" y="190" font-size="10" letter-spacing="1.8" fill="#7d7d7d">OCT 2025 TO OCT 2026</text>
+  </g>
+  <line x1="302" y1="86" x2="302" y2="186" stroke="#ffffff" stroke-opacity=".12"/>
+  <g class="slam d3">
+    <g transform="translate(0,146) skewX(-9) translate(0,-146)"><text class="disp" font-size="52" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="332" y="150" fill="#e4002b">66</text><text class="disp" font-size="52" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="328" y="146" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">66</text><text class="disp sheen" font-size="52" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="328" y="146" fill="url(#sheen)">66</text></g>
+  </g>
+  <g class="rise d4">
+    <text class="hv" x="328" y="172" font-size="11" letter-spacing="2.4" fill="#ff2b50">ACTIVE DAYS</text>
+    <text class="mn" x="328" y="190" font-size="10" letter-spacing="1.8" fill="#7d7d7d">OF 365 DAYS</text>
+  </g>
+  <line x1="584" y1="86" x2="584" y2="186" stroke="#ffffff" stroke-opacity=".12"/>
+  <g class="slam d4">
+    <g transform="translate(0,146) skewX(-9) translate(0,-146)"><text class="disp" font-size="52" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="614" y="150" fill="#e4002b">26</text><text class="disp" font-size="52" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="610" y="146" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">26</text><text class="disp sheen" font-size="52" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="610" y="146" fill="url(#sheen)">26</text></g>
+  </g>
+  <g class="rise d5">
+    <text class="hv" x="610" y="172" font-size="11" letter-spacing="2.4" fill="#ff2b50">LONGEST STREAK</text>
+    <text class="mn" x="610" y="190" font-size="10" letter-spacing="1.8" fill="#7d7d7d">CONSECUTIVE DAYS</text>
+  </g>
+  <line x1="866" y1="86" x2="866" y2="186" stroke="#ffffff" stroke-opacity=".12"/>
+  <g class="slam d5">
+    <g transform="translate(0,146) skewX(-9) translate(0,-146)"><text class="disp" font-size="52" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="896" y="150" fill="#e4002b">17</text><text class="disp" font-size="52" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="892" y="146" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">17</text><text class="disp sheen" font-size="52" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="892" y="146" fill="url(#sheen)">17</text></g>
+  </g>
+  <g class="rise d6">
+    <text class="hv" x="892" y="172" font-size="11" letter-spacing="2.4" fill="#ff2b50">BUSIEST DAY</text>
+    <text class="mn" x="892" y="190" font-size="10" letter-spacing="1.8" fill="#7d7d7d">24 SEP 2026</text>
+  </g>
+  <line x1="46" y1="216" x2="1154" y2="216" stroke="#ffffff" stroke-opacity=".12"/>
+  <text class="mn rise d6" x="46" y="242" font-size="10.5" letter-spacing="3" fill="#7d7d7d">LANGUAGES BY VOLUME</text>
+  <g class="rise d7">
+    <polygon points="51.0,252 801.0,252 796.0,272 46.0,272" fill="#ff2b50"/>
+    <polygon points="808.0,252 976.1,252 971.1,272 803.0,272" fill="#e4002b"/>
+    <polygon points="983.1,252 1061.7,252 1056.7,272 978.1,272" fill="#b00022"/>
+    <polygon points="1068.7,252 1109.6,252 1104.6,272 1063.7,272" fill="#7a1526"/>
+    <polygon points="1116.6,252 1151.3,252 1146.3,272 1111.6,272" fill="#9b6f77"/>
+    <polygon points="1158.3,252 1154.0,252 1149.0,272 1153.3,272" fill="#7a7077"/>
+    <polygon points="1161.0,252 1154.0,252 1149.0,272 1156.0,272" fill="#5d5760"/>
+  </g>
+  <g class="rise d8">
+    <polygon points="48,288 57,288 55,298 46,298" fill="#ff2b50"/>
+    <text class="mn" x="64" y="298" font-size="10.5" letter-spacing=".8" fill="#ece9e4" fill-opacity=".8">TypeScript 68.1%</text>
+    <polygon points="192,288 201,288 199,298 190,298" fill="#e4002b"/>
+    <text class="mn" x="208" y="298" font-size="10.5" letter-spacing=".8" fill="#ece9e4" fill-opacity=".8">Python 15.6%</text>
+    <polygon points="310,288 319,288 317,298 308,298" fill="#b00022"/>
+    <text class="mn" x="326" y="298" font-size="10.5" letter-spacing=".8" fill="#ece9e4" fill-opacity=".8">CSS 7.5%</text>
+    <polygon points="402,288 411,288 409,298 400,298" fill="#7a1526"/>
+    <text class="mn" x="418" y="298" font-size="10.5" letter-spacing=".8" fill="#ece9e4" fill-opacity=".8">Dart 4.1%</text>
+    <polygon points="500.5,288 509.5,288 507.5,298 498.5,298" fill="#9b6f77"/>
+    <text class="mn" x="516.5" y="298" font-size="10.5" letter-spacing=".8" fill="#ece9e4" fill-opacity=".8">JavaScript 3.6%</text>
+    <polygon points="638,288 647,288 645,298 636,298" fill="#7a7077"/>
+    <text class="mn" x="654" y="298" font-size="10.5" letter-spacing=".8" fill="#ece9e4" fill-opacity=".8">C++ 0.6%</text>
+    <polygon points="730,288 739,288 737,298 728,298" fill="#5d5760"/>
+    <text class="mn" x="746" y="298" font-size="10.5" letter-spacing=".8" fill="#ece9e4" fill-opacity=".8">Other 0.3%</text>
+  </g>
+</svg>

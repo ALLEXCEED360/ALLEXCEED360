@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 214" width="1200" height="214" role="img" aria-label="No final form. Just the next level. Aryan Alam, ALLEXCEED360.">
-  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
+  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="-300" y1="0" x2="-40" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".92"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/><animateTransform attributeName="gradientTransform" type="translate" values="0 0;1760 0;1760 0" keyTimes="0;.42;1" dur="6.4s" begin="1.1s" repeatCount="indefinite"/></linearGradient><linearGradient id="scanf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e4002b" stop-opacity="0"/><stop offset=".5" stop-color="#ff2b50" stop-opacity=".85"/><stop offset="1" stop-color="#e4002b" stop-opacity="0"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
   <style>
     .disp{font-family:Impact,Haettenschweiler,"Franklin Gothic Heavy","Arial Narrow Bold","Arial Black",sans-serif;font-weight:400}
     .hv{font-family:"Arial Black","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900}
@@ -12,18 +12,42 @@
     .d5{animation-delay:.4s}.d6{animation-delay:.5s}.d7{animation-delay:.6s}.d8{animation-delay:.7s}
     .draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.3s cubic-bezier(.65,0,.35,1) .25s forwards}
     .flick{animation:flick 5s steps(1,end) infinite}
+    .ember{animation-name:ember;animation-timing-function:ease-out;animation-iteration-count:infinite}
+    .scan{animation:scan 9.7s linear infinite}
+    .drift{animation:drift 26s ease-in-out infinite}
+    .pulse{animation:pulse 3.6s ease-in-out infinite}
+    .amb{pointer-events:none}
     @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
     @keyframes slam{from{opacity:0;transform:translate(-34px,0) scale(1.06)}to{opacity:1;transform:none}}
     @keyframes cut{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:none}}
     @keyframes draw{to{stroke-dashoffset:0}}
     @keyframes flick{0%,92%,96%{opacity:1}94%,98%{opacity:.45}}
+    @keyframes ember{0%{opacity:0;transform:translateY(0)}14%{opacity:.75}66%{opacity:.38}100%{opacity:0;transform:translateY(-262px)}}
+    @keyframes scan{0%{transform:translateY(-24px);opacity:0}7%{opacity:.5}93%{opacity:.5}100%{transform:translateY(240px);opacity:0}}
+    @keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(22px)}}
+    @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
     @media (prefers-reduced-motion:reduce){
-      .rise,.slam,.cut,.flick{animation:none}
+      .rise,.slam,.cut,.flick,.ember,.scan,.drift,.pulse{animation:none}
       .draw{animation:none;stroke-dashoffset:0}
+      .sheen,.amb{display:none}
     }
   </style>
   <rect width="1200" height="214" fill="url(#gd)"/>
   <rect width="1200" height="214" fill="url(#ht)" opacity=".5"/>
+  <g class="amb">
+    <circle class="ember" cx="806" cy="225" r="2.3" fill="#ff2b50" style="animation-duration:12.9s;animation-delay:-11.7s"/>
+    <circle class="ember" cx="526" cy="240" r="2.1" fill="#e4002b" style="animation-duration:10.4s;animation-delay:-3.1s"/>
+    <circle class="ember" cx="869" cy="224" r="1.3" fill="#e4002b" style="animation-duration:11.6s;animation-delay:-4.0s"/>
+    <circle class="ember" cx="676" cy="216" r="1.4" fill="#ff2b50" style="animation-duration:12.2s;animation-delay:-3.7s"/>
+    <circle class="ember" cx="809" cy="230" r="2.2" fill="#e4002b" style="animation-duration:13.5s;animation-delay:-2.7s"/>
+    <circle class="ember" cx="202" cy="224" r="2.2" fill="#e4002b" style="animation-duration:12.8s;animation-delay:-1.3s"/>
+    <circle class="ember" cx="1116" cy="234" r="1.6" fill="#ff2b50" style="animation-duration:8.9s;animation-delay:-10.3s"/>
+    <circle class="ember" cx="327" cy="236" r="1.2" fill="#e4002b" style="animation-duration:8.0s;animation-delay:-3.5s"/>
+    <circle class="ember" cx="874" cy="222" r="2.5" fill="#e4002b" style="animation-duration:8.4s;animation-delay:-3.7s"/>
+    <circle class="ember" cx="1109" cy="219" r="2.3" fill="#ff2b50" style="animation-duration:13.8s;animation-delay:-8.1s"/>
+    <circle class="ember" cx="513" cy="220" r="2.1" fill="#e4002b" style="animation-duration:7.5s;animation-delay:-6.2s"/>
+    <rect class="scan" x="0" y="0" width="1200" height="2" fill="url(#scanf)"/>
+  </g>
   <polygon class="cut d1" points="482,-10 560,-10 458,224 380,224" fill="#e4002b" fill-opacity=".2"/>
   <polygon class="cut d1" points="700,-10 740,-10 638,224 598,224" fill="#e4002b" fill-opacity=".2"/>
   <g class="rise d2">
@@ -31,7 +55,7 @@
     <path d="M568 62c10-17 23-25 32-25s22 8 32 25c-10 17-23 25-32 25s-22-8-32-25z" fill="#050505"/>
     <circle cx="600" cy="62" r="9" fill="#ffffff"/>
   </g>
-  <g class="slam d3"><g transform="translate(0,142) skewX(-9) translate(0,-142)"><text class="disp" font-size="44" textLength="346" lengthAdjust="spacingAndGlyphs" text-anchor="middle" x="603" y="145" fill="#e4002b">NO FINAL FORM.</text><text class="disp" font-size="44" textLength="346" lengthAdjust="spacingAndGlyphs" text-anchor="middle" x="600" y="142" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">NO FINAL FORM.</text></g></g>
-  <g class="slam d4"><g transform="translate(0,186) skewX(-9) translate(0,-186)"><text class="disp" font-size="44" textLength="492" lengthAdjust="spacingAndGlyphs" text-anchor="middle" x="603" y="189" fill="#e4002b">JUST THE NEXT LEVEL.</text><text class="disp" font-size="44" textLength="492" lengthAdjust="spacingAndGlyphs" text-anchor="middle" x="600" y="186" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">JUST THE NEXT LEVEL.</text></g></g>
+  <g class="slam d3"><g transform="translate(0,142) skewX(-9) translate(0,-142)"><text class="disp" font-size="44" textLength="346" lengthAdjust="spacingAndGlyphs" text-anchor="middle" x="603" y="145" fill="#e4002b">NO FINAL FORM.</text><text class="disp" font-size="44" textLength="346" lengthAdjust="spacingAndGlyphs" text-anchor="middle" x="600" y="142" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">NO FINAL FORM.</text><text class="disp sheen" font-size="44" textLength="346" lengthAdjust="spacingAndGlyphs" text-anchor="middle" x="600" y="142" fill="url(#sheen)">NO FINAL FORM.</text></g></g>
+  <g class="slam d4"><g transform="translate(0,186) skewX(-9) translate(0,-186)"><text class="disp" font-size="44" textLength="492" lengthAdjust="spacingAndGlyphs" text-anchor="middle" x="603" y="189" fill="#e4002b">JUST THE NEXT LEVEL.</text><text class="disp" font-size="44" textLength="492" lengthAdjust="spacingAndGlyphs" text-anchor="middle" x="600" y="186" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">JUST THE NEXT LEVEL.</text><text class="disp sheen" font-size="44" textLength="492" lengthAdjust="spacingAndGlyphs" text-anchor="middle" x="600" y="186" fill="url(#sheen)">JUST THE NEXT LEVEL.</text></g></g>
   <text class="mn rise d6" x="1158" y="204" font-size="10.5" letter-spacing="4" text-anchor="end" fill="#7d7d7d">ARYAN ALAM &#183; ALLEXCEED360</text>
 </svg>

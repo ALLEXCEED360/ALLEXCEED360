@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 486" width="1200" height="486" role="img" aria-label="Aryan Alam. Software engineer, game developer and visual storyteller. I build systems and tell the stories around them. BRAC University CSE; Unity, Unreal 5 and PyTorch; shipped on Steam.">
-  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 508" width="1200" height="508" role="img" aria-label="Aryan Alam. Software engineer, game developer and visual storyteller. Building systems, telling stories, creating worlds. Houston, Texas. Education BRAC University CSE; next chapter Georgia Tech OMSCS; game development in Unity and Unreal Engine 5; engineering in Python and C++.">
+  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="-300" y1="0" x2="-40" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".92"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/><animateTransform attributeName="gradientTransform" type="translate" values="0 0;1760 0;1760 0" keyTimes="0;.42;1" dur="6.4s" begin="1.1s" repeatCount="indefinite"/></linearGradient><linearGradient id="scanf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e4002b" stop-opacity="0"/><stop offset=".5" stop-color="#ff2b50" stop-opacity=".85"/><stop offset="1" stop-color="#e4002b" stop-opacity="0"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
   <style>
     .disp{font-family:Impact,Haettenschweiler,"Franklin Gothic Heavy","Arial Narrow Bold","Arial Black",sans-serif;font-weight:400}
     .hv{font-family:"Arial Black","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900}
@@ -12,19 +12,50 @@
     .d5{animation-delay:.4s}.d6{animation-delay:.5s}.d7{animation-delay:.6s}.d8{animation-delay:.7s}
     .draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.3s cubic-bezier(.65,0,.35,1) .25s forwards}
     .flick{animation:flick 5s steps(1,end) infinite}
+    .ember{animation-name:ember;animation-timing-function:ease-out;animation-iteration-count:infinite}
+    .scan{animation:scan 23.1s linear infinite}
+    .drift{animation:drift 26s ease-in-out infinite}
+    .pulse{animation:pulse 3.6s ease-in-out infinite}
+    .amb{pointer-events:none}
     @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
     @keyframes slam{from{opacity:0;transform:translate(-34px,0) scale(1.06)}to{opacity:1;transform:none}}
     @keyframes cut{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:none}}
     @keyframes draw{to{stroke-dashoffset:0}}
     @keyframes flick{0%,92%,96%{opacity:1}94%,98%{opacity:.45}}
+    @keyframes ember{0%{opacity:0;transform:translateY(0)}14%{opacity:.75}66%{opacity:.38}100%{opacity:0;transform:translateY(-556px)}}
+    @keyframes scan{0%{transform:translateY(-24px);opacity:0}7%{opacity:.5}93%{opacity:.5}100%{transform:translateY(534px);opacity:0}}
+    @keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(22px)}}
+    @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
     @media (prefers-reduced-motion:reduce){
-      .rise,.slam,.cut,.flick{animation:none}
+      .rise,.slam,.cut,.flick,.ember,.scan,.drift,.pulse{animation:none}
       .draw{animation:none;stroke-dashoffset:0}
+      .sheen,.amb{display:none}
     }
   </style>
-  <rect width="1200" height="486" fill="url(#gd)"/>
-  <rect width="1200" height="486" fill="url(#ht)" opacity=".5"/>
-  <g class="cut d1" opacity=".9">
+  <rect width="1200" height="508" fill="url(#gd)"/>
+  <rect width="1200" height="508" fill="url(#ht)" opacity=".5"/>
+  <g class="amb">
+    <circle class="ember" cx="867" cy="523" r="1.8" fill="#ff2b50" style="animation-duration:7.4s;animation-delay:-7.1s"/>
+    <circle class="ember" cx="1096" cy="521" r="1.7" fill="#e4002b" style="animation-duration:11.8s;animation-delay:-11.0s"/>
+    <circle class="ember" cx="678" cy="511" r="2.3" fill="#e4002b" style="animation-duration:11.1s;animation-delay:-7.0s"/>
+    <circle class="ember" cx="324" cy="527" r="1.5" fill="#ff2b50" style="animation-duration:11.6s;animation-delay:-4.3s"/>
+    <circle class="ember" cx="1006" cy="522" r="2.1" fill="#e4002b" style="animation-duration:13.6s;animation-delay:-1.9s"/>
+    <circle class="ember" cx="1176" cy="534" r="1.9" fill="#e4002b" style="animation-duration:13.6s;animation-delay:-4.3s"/>
+    <circle class="ember" cx="746" cy="520" r="2.6" fill="#ff2b50" style="animation-duration:7.1s;animation-delay:-4.0s"/>
+    <circle class="ember" cx="286" cy="523" r="1.5" fill="#e4002b" style="animation-duration:9.5s;animation-delay:-10.8s"/>
+    <circle class="ember" cx="439" cy="522" r="2.2" fill="#e4002b" style="animation-duration:7.2s;animation-delay:-10.3s"/>
+    <circle class="ember" cx="1008" cy="527" r="2.2" fill="#ff2b50" style="animation-duration:7.2s;animation-delay:-2.5s"/>
+    <circle class="ember" cx="28" cy="515" r="1.6" fill="#e4002b" style="animation-duration:12.3s;animation-delay:-7.2s"/>
+    <circle class="ember" cx="372" cy="526" r="1.3" fill="#e4002b" style="animation-duration:7.5s;animation-delay:-4.9s"/>
+    <circle class="ember" cx="931" cy="520" r="2.1" fill="#ff2b50" style="animation-duration:13.5s;animation-delay:-0.6s"/>
+    <circle class="ember" cx="631" cy="518" r="1.1" fill="#e4002b" style="animation-duration:10.6s;animation-delay:-2.2s"/>
+    <circle class="ember" cx="186" cy="522" r="1.3" fill="#e4002b" style="animation-duration:8.1s;animation-delay:-9.8s"/>
+    <circle class="ember" cx="741" cy="519" r="1.2" fill="#ff2b50" style="animation-duration:9.5s;animation-delay:-10.3s"/>
+    <circle class="ember" cx="1082" cy="516" r="1.3" fill="#e4002b" style="animation-duration:7.5s;animation-delay:-7.3s"/>
+    <circle class="ember" cx="772" cy="516" r="1.9" fill="#e4002b" style="animation-duration:9.6s;animation-delay:-6.1s"/>
+    <rect class="scan" x="0" y="0" width="1200" height="2" fill="url(#scanf)"/>
+  </g>
+  <g class="cut d1 drift" opacity=".9">
     <polygon points="812,-10 938,-10 668,496 542,496" fill="#e4002b" fill-opacity=".16"/>
     <polygon points="958,-10 1002,-10 732,496 688,496" fill="#e4002b" fill-opacity=".30"/>
   </g>
@@ -39,24 +70,28 @@
   <g class="rise d1">
     <polygon points="56,30 70,30 66,46 52,46" fill="#e4002b"/>
     <text class="hv" x="82" y="44" font-size="13" letter-spacing="6" fill="#ffffff">ALLEXCEED360</text>
-    <text class="mn" x="1144" y="44" font-size="12" letter-spacing="4" text-anchor="end" fill="#7d7d7d">EST. DHAKA</text>
+    <text class="mn" x="1144" y="44" font-size="12" letter-spacing="4" text-anchor="end" fill="#7d7d7d">HOUSTON, TX</text>
   </g>
   <line class="draw" x1="56" y1="62" x2="1144" y2="62" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/>
-  <g class="slam d2"><g transform="translate(0,196) skewX(-9) translate(0,-196)"><text class="disp" font-size="126" textLength="330" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="64" y="204" fill="#e4002b">ARYAN</text><text class="disp" font-size="126" textLength="330" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="56" y="196" fill="#ffffff" stroke="#050505" stroke-width="7" stroke-linejoin="round" paint-order="stroke">ARYAN</text></g></g>
-  <g class="slam d3"><g transform="translate(0,310) skewX(-9) translate(0,-310)"><text class="disp" font-size="126" textLength="268" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="112" y="318" fill="#e4002b">ALAM</text><text class="disp" font-size="126" textLength="268" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="104" y="310" fill="#ffffff" stroke="#050505" stroke-width="7" stroke-linejoin="round" paint-order="stroke">ALAM</text></g></g>
+  <g class="slam d2"><g transform="translate(0,196) skewX(-9) translate(0,-196)"><text class="disp" font-size="126" textLength="330" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="64" y="204" fill="#e4002b">ARYAN</text><text class="disp" font-size="126" textLength="330" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="56" y="196" fill="#ffffff" stroke="#050505" stroke-width="7" stroke-linejoin="round" paint-order="stroke">ARYAN</text><text class="disp sheen" font-size="126" textLength="330" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="56" y="196" fill="url(#sheen)">ARYAN</text></g></g>
+  <g class="slam d3"><g transform="translate(0,310) skewX(-9) translate(0,-310)"><text class="disp" font-size="126" textLength="268" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="112" y="318" fill="#e4002b">ALAM</text><text class="disp" font-size="126" textLength="268" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="104" y="310" fill="#ffffff" stroke="#050505" stroke-width="7" stroke-linejoin="round" paint-order="stroke">ALAM</text><text class="disp sheen" font-size="126" textLength="268" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="104" y="310" fill="url(#sheen)">ALAM</text></g></g>
   <g class="rise d5">
     <polygon points="50.0,340.0 76.0,343.9 117.8,338.0 159.2,346.7 183.1,340.3 209.3,344.7 249.0,344.9 267.6,337.1 296.0,344.2 328.0,339.3 346.2,342.6 367.9,346.1 399.1,341.5 440.3,342.6 477.7,341.6 505.9,340.9 543.6,338.4 581.6,344.3 614.8,338.0 640.1,346.1 672.8,341.2 691.4,345.8 713.0,341.8 740.0,339.2 740.0,382.7 719.5,383.7 681.9,383.4 649.8,387.0 610.7,387.5 584.8,381.1 554.4,383.7 513.1,385.9 479.5,387.0 450.2,386.4 422.6,388.4 401.7,383.6 366.3,388.7 348.2,386.5 317.8,383.6 281.8,390.2 243.4,384.2 220.1,381.8 187.3,390.9 146.7,390.0 121.3,384.8 83.4,388.7 63.8,384.3 50.0,381.3" fill="#ffffff"/>
     <text class="hv" x="70" y="372" font-size="15.5" letter-spacing="2.6" textLength="634" lengthAdjust="spacing" fill="#050505">SOFTWARE ENGINEER / GAME DEVELOPER / VISUAL STORYTELLER</text>
   </g>
-  <text class="sn rise d6" x="56" y="420" font-size="19" font-style="italic" fill="#ece9e4">I build systems, and tell the stories around them.</text>
+  <text class="sn rise d6" x="56" y="420" font-size="19" font-style="italic" fill="#ece9e4">Building systems. Telling stories. Creating worlds.</text>
   <g class="rise d7">
-    <line x1="56" y1="444" x2="1144" y2="444" stroke="#ffffff" stroke-opacity=".2" stroke-width="1.5"/>
-    <g class="mn" font-size="12.5" letter-spacing="3" fill="#7d7d7d">
-      <text x="56" y="470">BRAC UNIVERSITY / CSE</text>
-      <text x="416" y="470">UNITY &#183; UNREAL 5 &#183; PYTORCH</text>
-      <text x="836" y="470">SHIPPED ON STEAM</text>
-    </g>
-    <polygon points="388,458 400,458 396,472 384,472" fill="#e4002b"/>
-    <polygon points="808,458 820,458 816,472 804,472" fill="#e4002b"/>
+    <line x1="56" y1="440" x2="1144" y2="440" stroke="#ffffff" stroke-opacity=".2" stroke-width="1.5"/>
+    <text class="mn" x="56" y="466" font-size="10.5" letter-spacing="2.8" fill="#7d7d7d">EDUCATION</text>
+    <text class="hv" x="56" y="489" font-size="14" letter-spacing="1.4" fill="#ffffff">BRACU / CSE</text>
+    <polygon points="302,456 308,456 302,490 296,490" fill="#e4002b" fill-opacity=".55"/>
+    <text class="mn" x="328" y="466" font-size="10.5" letter-spacing="2.8" fill="#7d7d7d">NEXT CHAPTER</text>
+    <text class="hv" x="328" y="489" font-size="14" letter-spacing="1.4" fill="#ffffff">GT / OMSCS</text>
+    <polygon points="574,456 580,456 574,490 568,490" fill="#e4002b" fill-opacity=".55"/>
+    <text class="mn" x="600" y="466" font-size="10.5" letter-spacing="2.8" fill="#7d7d7d">GAME DEV</text>
+    <text class="hv" x="600" y="489" font-size="14" letter-spacing="1.4" fill="#ffffff">UNITY / UE5</text>
+    <polygon points="846,456 852,456 846,490 840,490" fill="#e4002b" fill-opacity=".55"/>
+    <text class="mn" x="872" y="466" font-size="10.5" letter-spacing="2.8" fill="#7d7d7d">ENGINEERING</text>
+    <text class="hv" x="872" y="489" font-size="14" letter-spacing="1.4" fill="#ffffff">PYTHON / C++</text>
   </g>
 </svg>
