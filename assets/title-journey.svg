@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 132" width="1200" height="132" role="img" aria-label="04 Journey. Where the road has gone.">
+  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
+  <style>
+    .disp{font-family:Impact,Haettenschweiler,"Franklin Gothic Heavy","Arial Narrow Bold","Arial Black",sans-serif;font-weight:400}
+    .hv{font-family:"Arial Black","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900}
+    .sn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+    .mn{font-family:ui-monospace,"IBM Plex Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .rise{animation:rise .85s cubic-bezier(.16,1,.3,1) both}
+    .slam{animation:slam .55s cubic-bezier(.2,1.3,.3,1) both}
+    .cut{animation:cut .6s cubic-bezier(.2,.9,.1,1) both}
+    .d1{animation-delay:.04s}.d2{animation-delay:.12s}.d3{animation-delay:.2s}.d4{animation-delay:.3s}
+    .d5{animation-delay:.4s}.d6{animation-delay:.5s}.d7{animation-delay:.6s}.d8{animation-delay:.7s}
+    .draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.3s cubic-bezier(.65,0,.35,1) .25s forwards}
+    .flick{animation:flick 5s steps(1,end) infinite}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    @keyframes slam{from{opacity:0;transform:translate(-34px,0) scale(1.06)}to{opacity:1;transform:none}}
+    @keyframes cut{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:none}}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    @keyframes flick{0%,92%,96%{opacity:1}94%,98%{opacity:.45}}
+    @media (prefers-reduced-motion:reduce){
+      .rise,.slam,.cut,.flick{animation:none}
+      .draw{animation:none;stroke-dashoffset:0}
+    }
+  </style>
+  <rect width="1200" height="132" fill="url(#gd)"/>
+  <rect width="1200" height="132" fill="url(#ht)" opacity=".5"/>
+  <polygon class="cut d1" points="-10,-10 150,-10 96,142 -10,142" fill="#e4002b"/>
+  <polygon class="cut d1" points="150,-10 176,-10 122,142 96,142" fill="#e4002b" fill-opacity=".45"/>
+  <g class="slam d2"><g transform="translate(0,96) skewX(-9) translate(0,-96)"><text class="disp" font-size="72" textLength="74" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="34" y="96" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">04</text></g></g>
+  <g class="slam d3"><g transform="translate(0,92) skewX(-9) translate(0,-92)"><text class="disp" font-size="64" textLength="210" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="213" y="97" fill="#e4002b">JOURNEY</text><text class="disp" font-size="64" textLength="210" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="208" y="92" fill="#ffffff" stroke="#050505" stroke-width="7" stroke-linejoin="round" paint-order="stroke">JOURNEY</text></g></g>
+  <text class="sn rise d5" x="1152" y="88" font-size="17" font-style="italic" text-anchor="end" fill="#ece9e4" fill-opacity=".62">Where the road has gone.</text>
+  <line class="draw" x1="208" y1="112" x2="1152" y2="112" stroke="#ffffff" stroke-opacity=".35" stroke-width="2"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 262" width="1200" height="262" role="img" aria-label="Quest I. DragonDrop, a networked multiplayer party game, live on Steam. Physics-driven play with a custom stage editor, cross-platform on PC and mobile and full Steam integration, and the game Aryan now develops and optimizes at Dragon Drop LLC. Unity, C sharp, Photon Fusion, Steamworks.">
+  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
+  <style>
+    .disp{font-family:Impact,Haettenschweiler,"Franklin Gothic Heavy","Arial Narrow Bold","Arial Black",sans-serif;font-weight:400}
+    .hv{font-family:"Arial Black","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900}
+    .sn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+    .mn{font-family:ui-monospace,"IBM Plex Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .rise{animation:rise .85s cubic-bezier(.16,1,.3,1) both}
+    .slam{animation:slam .55s cubic-bezier(.2,1.3,.3,1) both}
+    .cut{animation:cut .6s cubic-bezier(.2,.9,.1,1) both}
+    .d1{animation-delay:.04s}.d2{animation-delay:.12s}.d3{animation-delay:.2s}.d4{animation-delay:.3s}
+    .d5{animation-delay:.4s}.d6{animation-delay:.5s}.d7{animation-delay:.6s}.d8{animation-delay:.7s}
+    .draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.3s cubic-bezier(.65,0,.35,1) .25s forwards}
+    .flick{animation:flick 5s steps(1,end) infinite}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    @keyframes slam{from{opacity:0;transform:translate(-34px,0) scale(1.06)}to{opacity:1;transform:none}}
+    @keyframes cut{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:none}}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    @keyframes flick{0%,92%,96%{opacity:1}94%,98%{opacity:.45}}
+    @media (prefers-reduced-motion:reduce){
+      .rise,.slam,.cut,.flick{animation:none}
+      .draw{animation:none;stroke-dashoffset:0}
+    }
+  </style>
+  <rect width="1200" height="262" fill="url(#gd)"/>
+  <rect width="1200" height="262" fill="url(#ht)" opacity=".5"/>
+  <polygon points="24,0 1200,0 1200,238 1176,262 0,262 0,24" fill="#0e0e0e" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+  <polygon points="2,30 14,22 14,240 2,250" fill="#e4002b"/>
+  <g transform="translate(0,232) skewX(-9) translate(0,-232)"><text class="disp" font-size="182" textLength="66" lengthAdjust="spacingAndGlyphs" text-anchor="end" fill-opacity=".05" x="1164" y="232" fill="#ffffff">I</text></g>
+  <g class="rise d1">
+    <polygon points="38.0,30.9 55.5,26.2 75.7,24.5 97.6,30.7 119.5,31.5 139.0,27.7 154.5,24.0 166.0,26.0 166.0,58.1 149.8,55.9 122.6,56.8 106.3,59.4 83.1,57.2 67.7,53.5 45.6,55.3 38.0,53.4" fill="#e4002b"/>
+    <text class="hv" x="52" y="48" font-size="11.5" letter-spacing="3.6" fill="#ffffff">QUEST I</text>
+    <g><polygon points="1045.48,28 1158,28 1149,53 1036.48,53" fill="#e4002b"/><text class="hv" x="1097.24" y="45" font-size="10.5" letter-spacing="1.8" text-anchor="middle" fill="#ffffff">LIVE ON STEAM</text></g>
+  </g>
+  <g class="slam d2"><g transform="translate(0,112) skewX(-9) translate(0,-112)"><text class="disp" font-size="46" textLength="232" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="43" y="115" fill="#e4002b">DRAGONDROP</text><text class="disp" font-size="46" textLength="232" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="40" y="112" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">DRAGONDROP</text></g></g>
+  <text class="sn rise d3" x="298" y="112" font-size="15" font-style="italic" fill="#ece9e4" fill-opacity=".55">NETWORKED MULTIPLAYER PARTY GAME</text>
+  <line class="draw" x1="40" y1="132" x2="1158" y2="132" stroke="#ffffff" stroke-opacity=".2" stroke-width="1.5"/>
+  <text class="sn rise d4" x="40" y="160" font-size="16" fill="#ece9e4" fill-opacity=".9">Physics-driven party game with a custom stage editor, cross-platform play and full Steam</text>
+  <text class="sn rise d5" x="40" y="185" font-size="16" fill="#ece9e4" fill-opacity=".9">integration. The game I now develop and optimize at Dragon Drop LLC.</text>
+  <text class="mn rise d6" x="40" y="208" font-size="10.5" letter-spacing="2.2" fill="#ff2b50">SHIPPED ON STEAM  /  PC + MOBILE  /  CUSTOM STAGE EDITOR</text>
+  <g class="rise d7"><g><polygon points="44,222 95.275,222 91.275,245 40,245" fill="#171717" stroke="#ffffff" stroke-opacity=".5"/><text class="mn" x="51" y="237.5" font-size="11" letter-spacing=".5" fill="#ece9e4">Unity</text></g><g><polygon points="108.275,222 139.585,222 135.585,245 104.275,245" fill="#171717" stroke="#ffffff" stroke-opacity=".5"/><text class="mn" x="115.275" y="237.5" font-size="11" letter-spacing=".5" fill="#ece9e4">C#</text></g><g><polygon points="152.585,222 257.1,222 253.1,245 148.585,245" fill="#171717" stroke="#ffffff" stroke-opacity=".5"/><text class="mn" x="159.585" y="237.5" font-size="11" letter-spacing=".5" fill="#ece9e4">Photon Fusion</text></g><g><polygon points="270.1,222 354.65,222 350.65,245 266.1,245" fill="#171717" stroke="#ffffff" stroke-opacity=".5"/><text class="mn" x="277.1" y="237.5" font-size="11" letter-spacing=".5" fill="#ece9e4">Steamworks</text></g></g>
+</svg>

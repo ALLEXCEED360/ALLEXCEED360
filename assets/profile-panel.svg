@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 492" width="1200" height="492" role="img" aria-label="Profile. Building systems, creating worlds. A Computer Science graduate from BRAC University working across software engineering, game development and visual storytelling. Currently developing games at Dragon Drop LLC and supporting people and operations as an HR Assistant at Imprint Resources and Management LLC. Education: BSc Computer Science, BRAC University. Current quest: build something worth remembering.">
+  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
+  <style>
+    .disp{font-family:Impact,Haettenschweiler,"Franklin Gothic Heavy","Arial Narrow Bold","Arial Black",sans-serif;font-weight:400}
+    .hv{font-family:"Arial Black","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900}
+    .sn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+    .mn{font-family:ui-monospace,"IBM Plex Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .rise{animation:rise .85s cubic-bezier(.16,1,.3,1) both}
+    .slam{animation:slam .55s cubic-bezier(.2,1.3,.3,1) both}
+    .cut{animation:cut .6s cubic-bezier(.2,.9,.1,1) both}
+    .d1{animation-delay:.04s}.d2{animation-delay:.12s}.d3{animation-delay:.2s}.d4{animation-delay:.3s}
+    .d5{animation-delay:.4s}.d6{animation-delay:.5s}.d7{animation-delay:.6s}.d8{animation-delay:.7s}
+    .draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.3s cubic-bezier(.65,0,.35,1) .25s forwards}
+    .flick{animation:flick 5s steps(1,end) infinite}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    @keyframes slam{from{opacity:0;transform:translate(-34px,0) scale(1.06)}to{opacity:1;transform:none}}
+    @keyframes cut{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:none}}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    @keyframes flick{0%,92%,96%{opacity:1}94%,98%{opacity:.45}}
+    @media (prefers-reduced-motion:reduce){
+      .rise,.slam,.cut,.flick{animation:none}
+      .draw{animation:none;stroke-dashoffset:0}
+    }
+  </style>
+  <rect width="1200" height="492" fill="url(#gd)"/>
+  <rect width="1200" height="492" fill="url(#ht)" opacity=".5"/>
+  <polygon points="24,0 1200,0 1200,468 1176,492 0,492 0,24" fill="#0e0e0e" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+  <polygon points="2,30 14,22 14,470 2,480" fill="#e4002b"/>
+  <g class="rise d1">
+    <polygon points="38.0,31.7 56.8,32.0 81.0,33.9 96.5,33.8 122.8,36.9 144.8,34.1 166.6,34.1 191.5,30.2 210.0,32.7 210.0,63.0 192.2,61.7 162.2,63.7 140.0,60.7 125.1,65.3 98.1,62.7 84.7,66.1 70.7,64.1 42.9,66.3 38.0,61.1" fill="#e4002b"/>
+    <text class="hv" x="52" y="55" font-size="12" letter-spacing="4.5" fill="#ffffff">PROFILE</text>
+  </g>
+  <g class="slam d2"><g transform="translate(0,132) skewX(-9) translate(0,-132)"><text class="disp" font-size="40" textLength="374" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="47" y="135" fill="#e4002b">BUILDING SYSTEMS.</text><text class="disp" font-size="40" textLength="374" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="44" y="132" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">BUILDING SYSTEMS.</text></g></g>
+  <g class="slam d3"><g transform="translate(0,184) skewX(-9) translate(0,-184)"><text class="disp" font-size="40" textLength="350" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="47" y="187" fill="#e4002b">CREATING WORLDS.</text><text class="disp" font-size="40" textLength="350" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="44" y="184" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">CREATING WORLDS.</text></g></g>
+  <g class="rise d4">
+    <polygon points="46,220 52,220 46,258 40,258" fill="#e4002b"/>
+    <text class="mn" x="62" y="232" font-size="10" letter-spacing="3" fill="#ff2b50">EDUCATION</text>
+    <text class="sn" x="62" y="254" font-size="14.5" fill="#ece9e4" fill-opacity=".88">BSc Computer Science, BRAC University</text>
+  </g>
+  <g class="rise d5">
+    <polygon points="46,274 52,274 46,312 40,312" fill="#e4002b"/>
+    <text class="mn" x="62" y="286" font-size="10" letter-spacing="3" fill="#ff2b50">GAMES</text>
+    <text class="sn" x="62" y="308" font-size="14.5" fill="#ece9e4" fill-opacity=".88">Game Developer, Dragon Drop LLC</text>
+  </g>
+  <g class="rise d6">
+    <polygon points="46,328 52,328 46,366 40,366" fill="#e4002b"/>
+    <text class="mn" x="62" y="340" font-size="10" letter-spacing="3" fill="#ff2b50">PEOPLE &amp; OPS</text>
+    <text class="sn" x="62" y="362" font-size="14.5" fill="#ece9e4" fill-opacity=".88">HR Assistant, Imprint Resources &amp; Management LLC</text>
+  </g>
+  <polygon points="470,48 476,48 458,386 452,386" fill="#e4002b" fill-opacity=".45"/>
+  <text class="sn rise d2" x="518" y="76" font-size="15.5" fill="#ece9e4" fill-opacity=".9">I&#x27;m a Computer Science graduate from BRAC University working across software</text>
+  <text class="sn rise d3" x="518" y="101" font-size="15.5" fill="#ece9e4" fill-opacity=".9">engineering, game development, and visual storytelling. Currently developing</text>
+  <text class="sn rise d4" x="518" y="126" font-size="15.5" fill="#ece9e4" fill-opacity=".9">games at Dragon Drop LLC and supporting people and operations as an HR</text>
+  <text class="sn rise d5" x="518" y="151" font-size="15.5" fill="#ece9e4" fill-opacity=".9">Assistant at Imprint Resources &amp; Management LLC.</text>
+  <text class="sn rise d7" x="518" y="201" font-size="15.5" fill="#ece9e4" fill-opacity=".9">I like turning ideas into things people can actually use, play, or experience.</text>
+  <text class="sn rise d8" x="518" y="226" font-size="15.5" fill="#ece9e4" fill-opacity=".9">That means engineering reliable systems, building interactive worlds, and</text>
+  <text class="sn rise d8" x="518" y="251" font-size="15.5" fill="#ece9e4" fill-opacity=".9">finding the details that make a project feel complete.</text>
+  <text class="sn rise d8" x="518" y="301" font-size="15.5" fill="#ece9e4" fill-opacity=".9">From tracing a story across the Final Fantasy VII timeline to bringing a game</text>
+  <text class="sn rise d8" x="518" y="326" font-size="15.5" fill="#ece9e4" fill-opacity=".9">to life, I enjoy the challenge of connecting technical precision with creative</text>
+  <text class="sn rise d8" x="518" y="351" font-size="15.5" fill="#ece9e4" fill-opacity=".9">vision.</text>
+  <g class="rise d8">
+    <polygon points="40.0,410.9 70.9,412.3 112.1,407.7 158.4,412.1 205.8,409.9 233.7,411.7 264.1,412.7 305.8,409.5 335.0,410.6 377.8,411.1 419.2,406.9 441.2,407.8 480.5,411.8 501.0,407.6 547.1,405.4 574.3,411.2 604.8,407.2 625.5,405.9 669.6,410.2 705.0,409.5 736.4,411.4 760.4,414.6 798.8,405.3 845.8,409.3 877.1,414.2 897.9,411.5 919.6,410.3 961.2,413.8 1001.2,413.7 1029.7,407.5 1055.7,412.7 1084.3,410.6 1131.9,408.1 1160.0,409.5 1160.0,459.2 1127.1,460.6 1095.1,459.7 1071.6,459.7 1032.6,465.6 1006.6,467.3 980.0,461.6 955.1,467.0 929.5,464.9 897.6,464.9 851.4,459.6 826.6,462.1 783.1,468.1 760.8,467.2 736.2,460.7 708.0,468.1 686.8,459.7 659.4,466.7 633.1,467.9 591.7,464.8 566.2,468.9 524.8,464.5 493.8,468.6 464.1,461.5 431.9,464.7 400.4,465.3 358.5,465.7 324.2,463.6 279.3,463.9 251.9,465.7 225.8,463.8 184.2,462.4 162.5,463.7 120.3,465.9 76.4,467.6 40.0,469.0" fill="#e4002b"/>
+    <polygon points="64,420 236,420 228,452 56,452" fill="#050505"/>
+    <text class="hv" x="146" y="441" font-size="11" letter-spacing="3" text-anchor="middle" fill="#ffffff">CURRENT QUEST</text>
+    <text class="hv" x="262" y="443" font-size="21" letter-spacing="1.4" fill="#ffffff">BUILD SOMETHING WORTH REMEMBERING.</text>
+  </g>
+</svg>

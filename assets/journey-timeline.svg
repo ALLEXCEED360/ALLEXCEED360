@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-label="Journey. Now: Game Developer at Dragon Drop LLC, developing and optimizing game applications across gameplay implementation, cross-platform compatibility and overall player experience; and Human Resources Assistant at Imprint Resources and Management LLC, supporting daily HR operations, employee communications and email documentation, records, workplace inspections and administrative tasks. Previously: ICT Intern at NRBC Bank building dynamic database-driven web systems in production; Undergraduate Teaching Assistant at BRAC University teaching Discrete Mathematics and programming; and Assistant Director of the Creative Department at BRAC University Computer Club handling branding, motion graphics and content for hackathons and developer conferences.">
+  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
+  <style>
+    .disp{font-family:Impact,Haettenschweiler,"Franklin Gothic Heavy","Arial Narrow Bold","Arial Black",sans-serif;font-weight:400}
+    .hv{font-family:"Arial Black","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900}
+    .sn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+    .mn{font-family:ui-monospace,"IBM Plex Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .rise{animation:rise .85s cubic-bezier(.16,1,.3,1) both}
+    .slam{animation:slam .55s cubic-bezier(.2,1.3,.3,1) both}
+    .cut{animation:cut .6s cubic-bezier(.2,.9,.1,1) both}
+    .d1{animation-delay:.04s}.d2{animation-delay:.12s}.d3{animation-delay:.2s}.d4{animation-delay:.3s}
+    .d5{animation-delay:.4s}.d6{animation-delay:.5s}.d7{animation-delay:.6s}.d8{animation-delay:.7s}
+    .draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.3s cubic-bezier(.65,0,.35,1) .25s forwards}
+    .flick{animation:flick 5s steps(1,end) infinite}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    @keyframes slam{from{opacity:0;transform:translate(-34px,0) scale(1.06)}to{opacity:1;transform:none}}
+    @keyframes cut{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:none}}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    @keyframes flick{0%,92%,96%{opacity:1}94%,98%{opacity:.45}}
+    @media (prefers-reduced-motion:reduce){
+      .rise,.slam,.cut,.flick{animation:none}
+      .draw{animation:none;stroke-dashoffset:0}
+    }
+  </style>
+  <rect width="1200" height="430" fill="url(#gd)"/>
+  <rect width="1200" height="430" fill="url(#ht)" opacity=".5"/>
+  <polygon points="24,0 1200,0 1200,406 1176,430 0,430 0,24" fill="#0e0e0e" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+  <polygon points="2,30 14,22 14,408 2,418" fill="#e4002b"/>
+  <line class="draw" x1="70" y1="52" x2="70" y2="378" stroke="#ffffff" stroke-opacity=".28" stroke-width="2"/>
+  <g class="rise d1">
+    <polygon points="82.4,79.8 74.1,80.4 72.9,88.7 68.2,81.7 60.5,84.8 64.1,77.3 57.6,72.2 65.9,71.6 67.1,63.3 71.8,70.3 79.5,67.2 75.9,74.7" fill="#e4002b"/>
+    <g transform="translate(0,83) skewX(-7) translate(0,-83)"><text class="disp" font-size="22" textLength="196" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="106" y="85" fill="#e4002b">GAME DEVELOPER</text><text class="disp" font-size="22" textLength="196" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="104" y="83" fill="#ffffff" stroke="#050505" stroke-width="4" stroke-linejoin="round" paint-order="stroke">GAME DEVELOPER</text></g>
+    <text class="sn" x="320" y="83" font-size="15" font-style="italic" fill="#ff2b50" fill-opacity=".58">Dragon Drop LLC</text>
+    <text class="sn" x="104" y="108" font-size="14.5" fill="#ece9e4" fill-opacity=".6">Developing and optimizing game applications: gameplay implementation, cross-platform compatibility and overall player experience.</text>
+    <g><polygon points="1115.88,62 1158,62 1149,87 1106.88,87" fill="#e4002b"/><text class="hv" x="1132.44" y="79" font-size="10.5" letter-spacing="1.8" text-anchor="middle" fill="#ffffff">NOW</text></g>
+  </g>
+  <g class="rise d2">
+    <polygon points="82.4,151.8 74.1,152.4 72.9,160.7 68.2,153.7 60.5,156.8 64.1,149.3 57.6,144.2 65.9,143.6 67.1,135.3 71.8,142.3 79.5,139.2 75.9,146.7" fill="#e4002b"/>
+    <g transform="translate(0,155) skewX(-7) translate(0,-155)"><text class="disp" font-size="22" textLength="318" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="106" y="157" fill="#e4002b">HUMAN RESOURCES ASSISTANT</text><text class="disp" font-size="22" textLength="318" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="104" y="155" fill="#ffffff" stroke="#050505" stroke-width="4" stroke-linejoin="round" paint-order="stroke">HUMAN RESOURCES ASSISTANT</text></g>
+    <text class="sn" x="442" y="155" font-size="15" font-style="italic" fill="#ff2b50" fill-opacity=".58">Imprint Resources &amp; Management LLC</text>
+    <text class="sn" x="104" y="180" font-size="14.5" fill="#ece9e4" fill-opacity=".6">Supporting daily HR operations: employee communications and email documentation, records, workplace inspections and administrative tasks.</text>
+    <g><polygon points="1115.88,134 1158,134 1149,159 1106.88,159" fill="#e4002b"/><text class="hv" x="1132.44" y="151" font-size="10.5" letter-spacing="1.8" text-anchor="middle" fill="#ffffff">NOW</text></g>
+  </g>
+  <g class="rise d3">
+    <polygon points="82.4,223.8 74.1,224.4 72.9,232.7 68.2,225.7 60.5,228.8 64.1,221.3 57.6,216.2 65.9,215.6 67.1,207.3 71.8,214.3 79.5,211.2 75.9,218.7" fill="#7d7d7d"/>
+    <g transform="translate(0,227) skewX(-7) translate(0,-227)"><text class="disp" font-size="22" textLength="136" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="106" y="229" fill="#e4002b">ICT INTERN</text><text class="disp" font-size="22" textLength="136" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="104" y="227" fill="#ffffff" stroke="#050505" stroke-width="4" stroke-linejoin="round" paint-order="stroke">ICT INTERN</text></g>
+    <text class="sn" x="260" y="227" font-size="15" font-style="italic" fill="#ff2b50" fill-opacity=".58">NRBC Bank</text>
+    <text class="sn" x="104" y="252" font-size="14.5" fill="#ece9e4" fill-opacity=".6">Built dynamic, database-driven web systems in production.</text>
+    <g><polygon points="1108.84,206 1158,206 1149,231 1099.84,231" fill="#171717"/><text class="hv" x="1128.92" y="223" font-size="10.5" letter-spacing="1.8" text-anchor="middle" fill="#ece9e4">PAST</text></g>
+  </g>
+  <g class="rise d4">
+    <polygon points="82.4,295.8 74.1,296.4 72.9,304.7 68.2,297.7 60.5,300.8 64.1,293.3 57.6,288.2 65.9,287.6 67.1,279.3 71.8,286.3 79.5,283.2 75.9,290.7" fill="#7d7d7d"/>
+    <g transform="translate(0,299) skewX(-7) translate(0,-299)"><text class="disp" font-size="22" textLength="216" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="106" y="301" fill="#e4002b">UNDERGRADUATE TA</text><text class="disp" font-size="22" textLength="216" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="104" y="299" fill="#ffffff" stroke="#050505" stroke-width="4" stroke-linejoin="round" paint-order="stroke">UNDERGRADUATE TA</text></g>
+    <text class="sn" x="340" y="299" font-size="15" font-style="italic" fill="#ff2b50" fill-opacity=".58">BRAC University</text>
+    <text class="sn" x="104" y="324" font-size="14.5" fill="#ece9e4" fill-opacity=".6">Taught Discrete Mathematics and programming. Led sessions, mentored students, designed evaluations.</text>
+    <g><polygon points="1108.84,278 1158,278 1149,303 1099.84,303" fill="#171717"/><text class="hv" x="1128.92" y="295" font-size="10.5" letter-spacing="1.8" text-anchor="middle" fill="#ece9e4">PAST</text></g>
+  </g>
+  <g class="rise d5">
+    <polygon points="82.4,367.8 74.1,368.4 72.9,376.7 68.2,369.7 60.5,372.8 64.1,365.3 57.6,360.2 65.9,359.6 67.1,351.3 71.8,358.3 79.5,355.2 75.9,362.7" fill="#7d7d7d"/>
+    <g transform="translate(0,371) skewX(-7) translate(0,-371)"><text class="disp" font-size="22" textLength="310" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="106" y="373" fill="#e4002b">ASST. DIRECTOR, CREATIVE</text><text class="disp" font-size="22" textLength="310" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="104" y="371" fill="#ffffff" stroke="#050505" stroke-width="4" stroke-linejoin="round" paint-order="stroke">ASST. DIRECTOR, CREATIVE</text></g>
+    <text class="sn" x="434" y="371" font-size="15" font-style="italic" fill="#ff2b50" fill-opacity=".58">BRAC University Computer Club</text>
+    <text class="sn" x="104" y="396" font-size="14.5" fill="#ece9e4" fill-opacity=".6">Branding, motion graphics and content for hackathons and developer conferences.</text>
+    <g><polygon points="1108.84,350 1158,350 1149,375 1099.84,375" fill="#171717"/><text class="hv" x="1128.92" y="367" font-size="10.5" letter-spacing="1.8" text-anchor="middle" fill="#ece9e4">PAST</text></g>
+  </g>
+</svg>

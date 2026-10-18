@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 262" width="1200" height="262" role="img" aria-label="Quest IV. Before You Post, privacy before you hit share, fully on-device. Finds faces, sensitive text and QR codes in a photo entirely on the phone, then lets you review and redact them before sharing, with no backend, no accounts and nothing leaving the device. Flutter, Dart, Google ML Kit.">
+  <defs><linearGradient id="gd" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e0e0e"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="rd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9e0020"/><stop offset="1" stop-color="#e4002b"/></linearGradient><pattern id="ht" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><circle cx="2" cy="2" r="1.5" fill="#e4002b" fill-opacity=".30"/></pattern></defs>
+  <style>
+    .disp{font-family:Impact,Haettenschweiler,"Franklin Gothic Heavy","Arial Narrow Bold","Arial Black",sans-serif;font-weight:400}
+    .hv{font-family:"Arial Black","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900}
+    .sn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+    .mn{font-family:ui-monospace,"IBM Plex Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    .rise{animation:rise .85s cubic-bezier(.16,1,.3,1) both}
+    .slam{animation:slam .55s cubic-bezier(.2,1.3,.3,1) both}
+    .cut{animation:cut .6s cubic-bezier(.2,.9,.1,1) both}
+    .d1{animation-delay:.04s}.d2{animation-delay:.12s}.d3{animation-delay:.2s}.d4{animation-delay:.3s}
+    .d5{animation-delay:.4s}.d6{animation-delay:.5s}.d7{animation-delay:.6s}.d8{animation-delay:.7s}
+    .draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.3s cubic-bezier(.65,0,.35,1) .25s forwards}
+    .flick{animation:flick 5s steps(1,end) infinite}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    @keyframes slam{from{opacity:0;transform:translate(-34px,0) scale(1.06)}to{opacity:1;transform:none}}
+    @keyframes cut{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:none}}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    @keyframes flick{0%,92%,96%{opacity:1}94%,98%{opacity:.45}}
+    @media (prefers-reduced-motion:reduce){
+      .rise,.slam,.cut,.flick{animation:none}
+      .draw{animation:none;stroke-dashoffset:0}
+    }
+  </style>
+  <rect width="1200" height="262" fill="url(#gd)"/>
+  <rect width="1200" height="262" fill="url(#ht)" opacity=".5"/>
+  <polygon points="24,0 1200,0 1200,238 1176,262 0,262 0,24" fill="#0e0e0e" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+  <polygon points="2,30 14,22 14,240 2,250" fill="#e4002b"/>
+  <g transform="translate(0,232) skewX(-9) translate(0,-232)"><text class="disp" font-size="182" textLength="132" lengthAdjust="spacingAndGlyphs" text-anchor="end" fill-opacity=".05" x="1164" y="232" fill="#ffffff">IV</text></g>
+  <g class="rise d1">
+    <polygon points="38.0,27.7 55.8,28.5 79.3,26.8 102.2,31.7 118.0,26.2 130.4,26.3 154.2,26.8 166.0,31.8 166.0,57.2 146.2,52.1 131.7,56.7 107.2,56.2 84.1,55.9 69.7,56.5 56.1,57.9 38.3,58.0 38.0,55.4" fill="#e4002b"/>
+    <text class="hv" x="52" y="48" font-size="11.5" letter-spacing="3.6" fill="#ffffff">QUEST IV</text>
+    <g><polygon points="1073.64,28 1158,28 1149,53 1064.64,53" fill="#9e0020"/><text class="hv" x="1111.32" y="45" font-size="10.5" letter-spacing="1.8" text-anchor="middle" fill="#ffffff">ON-DEVICE</text></g>
+  </g>
+  <g class="slam d2"><g transform="translate(0,112) skewX(-9) translate(0,-112)"><text class="disp" font-size="46" textLength="346" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="43" y="115" fill="#e4002b">BEFORE YOU POST</text><text class="disp" font-size="46" textLength="346" lengthAdjust="spacingAndGlyphs" text-anchor="start" x="40" y="112" fill="#ffffff" stroke="#050505" stroke-width="5" stroke-linejoin="round" paint-order="stroke">BEFORE YOU POST</text></g></g>
+  <text class="sn rise d3" x="412" y="112" font-size="15" font-style="italic" fill="#ece9e4" fill-opacity=".55">PRIVACY, BEFORE YOU HIT SHARE</text>
+  <line class="draw" x1="40" y1="132" x2="1158" y2="132" stroke="#ffffff" stroke-opacity=".2" stroke-width="1.5"/>
+  <text class="sn rise d4" x="40" y="160" font-size="16" fill="#ece9e4" fill-opacity=".9">Finds faces, sensitive text and QR codes in a photo entirely on-device, then lets you review</text>
+  <text class="sn rise d5" x="40" y="185" font-size="16" fill="#ece9e4" fill-opacity=".9">and redact them before sharing. No backend, no accounts, nothing leaves the phone.</text>
+  <text class="mn rise d6" x="40" y="208" font-size="10.5" letter-spacing="2.2" fill="#ff2b50">100% ON-DEVICE  /  NO BACKEND  /  NO UPLOADS</text>
+  <g class="rise d7"><g><polygon points="44,222 108.585,222 104.585,245 40,245" fill="#171717" stroke="#ffffff" stroke-opacity=".5"/><text class="mn" x="51" y="237.5" font-size="11" letter-spacing=".5" fill="#ece9e4">Flutter</text></g><g><polygon points="121.585,222 166.205,222 162.205,245 117.585,245" fill="#171717" stroke="#ffffff" stroke-opacity=".5"/><text class="mn" x="128.585" y="237.5" font-size="11" letter-spacing=".5" fill="#ece9e4">Dart</text></g><g><polygon points="179.205,222 283.72,222 279.72,245 175.205,245" fill="#171717" stroke="#ffffff" stroke-opacity=".5"/><text class="mn" x="186.205" y="237.5" font-size="11" letter-spacing=".5" fill="#ece9e4">Google ML Kit</text></g></g>
+</svg>
